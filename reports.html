@@ -1,0 +1,101 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ethical values & Policies</title>
+    <link href="./css/reports.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+            <div class="container">
+                <header class="header">
+                    <a href="index.html"><img src="./img/petkim-logo.png" class="logo" alt="Petkim Logo"></a>
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu">
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Corporate</a>
+                            <ul class="dropdown-content" id="corporateDropdown">
+                                <li><a href="vision.html">Vision & Mission</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="management.html">Management</a></li>
+                                <li><a href="ethics.html">Ethical Values & Policies</a></li>
+                                <li><a href="reports.html">Reports</a></li>
+                                <li><a href="fairs.html">Fairs</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                    <li><a href="Overview.html">Investor Relations</a></li>
+                    <li><a href="#products">Products and Services</a></li>
+                    <li><a href="sustainability.html">Sustainability</a></li>
+                </ul>
+            </header>
+
+
+        <main>
+            <h1>REPORTS</h1>
+            <div class="row">
+                <div class="column">
+                    <a href="/Users/hasanmustafabayli/Desktop/petkim-responsive/links/SOCAR_Turkey_Sustainability_Report_2022.pdf">
+                        <img src="/Users/hasanmustafabayli/Desktop/petkim-responsive/img/socar-sustain-report2022.png" alt="SOCAR Turkey Sustainability Report 2022" style="width:100%">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="/Users/hasanmustafabayli/Desktop/petkim-responsive/links/SOCAR_Turkey_Annual_Report_2022.pdf">
+                        <img src="/Users/hasanmustafabayli/Desktop/petkim-responsive/img/annual_report_22.jpg" alt="SOCAR Turkey Annual Report 2022" style="width:100%">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="/Users/hasanmustafabayli/Desktop/petkim-responsive/links/SOCAR_Sustainability_Report_2021.pdf">
+                        <img src="/Users/hasanmustafabayli/Desktop/petkim-responsive/img/petkim_en_2021.png" alt="SOCAR Sustainability Report 2021" style="width:100%">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="/Users/hasanmustafabayli/Desktop/petkim-responsive/links/socar_surdurulebilirlik_raporu_ing_double.pdf">
+                        <img src="/Users/hasanmustafabayli/Desktop/petkim-responsive/img/sustain_2019-2020.png" alt="SOCAR Sustainability Report 2019-2020" style="width:100%">
+                    </a>
+                </div>
+            </div>
+        </main>
+        
+
+        <footer>
+            <a href="http://www.socar.com.tr/"><img class="socarlogo" src="./img/socar-logo.png" alt="socar logo"></a>
+            <p>Copyright © 2011 Petkim Petrokimya Holding A.Ş - Rebuilt by Hasan Mustafabayli in 2022</p>
+            <a href="https://www.facebook.com/PetkimOfficial"><img class="facebook" src="./img/facebook.png" alt="socar logo"></a>
+            <a href="https://twitter.com/PetkimOfficial"><img class="twitter" src="./img/twitter.png" alt="socar logo"></a>
+            <a href="http://www.youtube.com/user/PetkimOfficial"><img class="youtube" src="./img/youtube.png" alt="socar logo"></a>
+            <a href="http://www.linkedin.com/company/1103857"><img class="linkedin" src="./img/linkedin.png" alt="socar logo"></a>
+        </footer>
+    </div>
+    <script>
+        document.querySelector('.dropbtn').addEventListener('click', function() {
+            document.getElementById('corporateDropdown').classList.toggle('show');
+        });
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName('dropdown-content');
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('.info-box').forEach(box => {
+            box.addEventListener('click', () => {
+                box.querySelector('.info-content').style.display = box.querySelector('.info-content').style.display === 'none' ? 'block' : 'none';
+            });
+        });
+    });
+    </script>
+</body>
+</html>  https://www.petkim.com.tr/petkim-at-a-glance
